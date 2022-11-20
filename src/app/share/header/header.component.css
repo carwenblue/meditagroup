@@ -1,0 +1,49 @@
+
+
+.container-fluid {
+  display: flex;
+  padding: 1.5em;
+
+}
+.span-logo {
+  color: #5db0e6;
+  font-size:40px;
+}
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .nav-item {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .btn-close {
+    font-size: 24px;
+    margin: 20px;
+    
+  }
+  /*MEDIA QUERIES*/
+@media screen and (max-width: 992px) {
+  .span-logo {
+    font-size:21px;
+
+  }
+  .navbar-toggler-icon{
+    font-size: 10px;
+  }
+  .nav-link {
+    margin-left: 20px;
+  }
+  .navbar-right {
+    float: right;
+  }
+  
+  }
+  @media screen and (min-width: 992px) {
+   .btn-close {
+      display: none!important;
+   }
+    
+    }
