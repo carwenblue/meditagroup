@@ -1,0 +1,41 @@
+.img-home-responsive {
+    width: 100%;
+    height: auto;
+}
+.hijo-container-center {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    
+}
+
+
+.button-rounded {
+    border-radius:30px;
+}
+.button {
+    width: 900px;
+    max-width: 60%;
+    background-color: #dae7f1;
+    border: 1px solid rgb(124, 121, 121);
+    color: rgb(52, 49, 49);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px auto;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 640px) {
+    .button {
+        max-width: 100%;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .button {
+        max-width: 40%;
+    }
+  }

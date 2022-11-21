@@ -1,0 +1,19 @@
+.container-fluid {
+    width: 100%;
+    margin: 30px 0 30px 0;
+    background-color:#d6ecfa;
+    
+}
+
+.imagen {
+    height: 400px;
+    width: 350px;
+}
+small {
+    float: right;
+}
+.btn {
+    margin: 10px;
+    white-space: normal;
+    word-wrap: break-word;
+}

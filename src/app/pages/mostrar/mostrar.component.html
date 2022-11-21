@@ -1,0 +1,52 @@
+
+
+<!--Si la actividad no existe muestra un elemento de espera de angular materiañ, si existe muestra la actividad-->
+
+<mat-grid-list cols="1"  *ngIf="!actividad; else divActividad"> 
+    <mat-grid-tile>
+        <mat-progress-spinner mode="indeterminate" color="accent"></mat-progress-spinner>
+    </mat-grid-tile>
+
+
+</mat-grid-list>
+
+
+<ng-template #divActividad>
+    <!-- Con la siguiente instrucción podriamos mostrar la data del json para comprobar que funciona antes de diseñar el template
+            {{ actividad | json }}
+    
+    -->
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-sm flex-item-left">
+                <br>
+                <h2>{{actividad.titulo}}</h2>
+
+                <img class="imagen" [src]="actividad | imagen" alt="imagen de la actividad">
+            </div>
+            <div class="col-lg-8 col-sm flex-item-right">
+                <br>
+                <h4><strong>Descripción de la actividad</strong></h4>
+                <h3>{{actividad.descripcion}}</h3>
+
+                <mat-divider></mat-divider>
+                    <mat-list>
+                        <p><strong>Inicio : </strong></p>
+                        <mat-list-item>{{actividad.inicio}}</mat-list-item>
+                        <p><strong>Duración : </strong></p>
+                        <mat-list-item>{{actividad.duracion}}</mat-list-item>
+                        <p><strong>Instructor : </strong></p>
+                        <mat-list-item>{{actividad.instructor}}</mat-list-item>
+                        <p><strong>Actividad activa : </strong></p>
+                        <mat-list-item>{{actividad.activa}}</mat-list-item>
+                </mat-list>
+
+                <button [routerLink]="[]" class="btn btn-primary">Unirse</button>
+                <button (click)="volver()" class="btn btn-primary">Volver</button>
+            </div>
+        </div>
+    </div>
+
+</ng-template>
+
