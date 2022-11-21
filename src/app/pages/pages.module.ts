@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '../material/material.module';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { ActividadesComponent } from './actividades/actividades.component';
 import { ContactanosComponent } from './contactanos/contactanos.component';
@@ -11,6 +12,9 @@ import { MostrarActividadComponent } from './components/mostrar-actividad/mostra
 import { MostrarComponent } from './mostrar/mostrar.component';
 import { AgregarComponent } from './agregar/agregar.component';
 import { ImagenPipe } from './pipes/imagen.pipe';
+import { BuscarComponent } from './buscar/buscar.component';
+
+
 
 
 
@@ -25,11 +29,13 @@ import { ImagenPipe } from './pipes/imagen.pipe';
     MostrarActividadComponent,
     MostrarComponent,
     AgregarComponent,
-    ImagenPipe
+    ImagenPipe,
+    BuscarComponent
     
   ],
   imports: [
     CommonModule, 
+    FormsModule,
     MaterialModule,
     RouterModule
   ]

@@ -26,5 +26,10 @@ export class ActividadService {
 
   }
 
+  getAutocompletar( palabra: string): Observable <Actividad []>{
+    return this.http.get<Actividad[]>(`${ this.urlDesarrollo }/actividad?q=${palabra}&_limit=6`);
+
+  }
+
 
 }

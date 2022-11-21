@@ -1,0 +1,40 @@
+
+<div class="container-fluid">
+    <br>
+    <h2>Buscar actividades de meditación</h2> 
+    <mat-divider></mat-divider>
+    <br>
+
+
+        <mat-form-field class="example-full-width" appearance="fill">
+           
+            <input type="text"
+                   placeholder="Introduce tu búsqueda"
+                   matInput
+                   [(ngModel)] ="palabra"
+                   [matAutocomplete]="auto"
+                   (input)="buscador()">
+            <mat-autocomplete autoActiveFirstOption 
+                              #auto="matAutocomplete"
+                              (optionSelected)="opcionSeleccionada($event)">
+                <mat-option *ngFor="let actividad of actividades" [value]="actividad">
+                    {{actividad.titulo}}
+                </mat-option>
+
+                  <!--Validar si es un string vacío-->
+                  <mat-option value="" *ngIf="actividades.length === 0 && palabra.trim().length>0" >
+                    No se encontró nada con el término {{palabra}}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+    </div>
+<!--  
+ <div>
+        <div>{{ actividadSeleccionada | json }}</div>
+    </div>
+-->
+   
+
+<div *ngIf="actividadSeleccionada">
+    <app-mostrar-actividad [actividad]="actividadSeleccionada"></app-mostrar-actividad>
+</div>
