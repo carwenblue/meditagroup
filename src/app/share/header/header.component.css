@@ -25,13 +25,13 @@
     
   }
   /*MEDIA QUERIES*/
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 2000px) {
   .span-logo {
-    font-size:21px;
+    font-size:24px;
 
   }
   .navbar-toggler-icon{
-    font-size: 10px;
+    font-size: 14px;
   }
   .nav-link {
     margin-left: 20px;
@@ -41,7 +41,7 @@
   }
   
   }
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 1198px) {
    .btn-close {
       display: none!important;
    }

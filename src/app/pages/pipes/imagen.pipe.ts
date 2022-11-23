@@ -7,6 +7,10 @@ import { Actividad } from '../../interfaces/actividad.interfaces';
 export class ImagenPipe implements PipeTransform {
 
   transform(actividad: Actividad): unknown {
+
+    if ( !actividad.id){
+      return 'assets/actividades/no-image.jpg';
+    } 
     
     // ej. assets/actividades/breathing.jpg
     console.log (actividad);

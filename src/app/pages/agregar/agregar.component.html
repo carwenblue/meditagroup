@@ -1,1 +1,108 @@
-<p>agregar works!</p>
+
+<div class="container-fluid">
+
+    <h2>Nueva actividad de meditación <small></small></h2>
+
+    <div class="row">
+
+        <!--Lado izquierdo al 50%-->
+        <div class="side-left">
+
+            <div class="together">
+                <mat-form-field class="form-field">
+                    <mat-label>Título</mat-label>
+                    <input matInput
+                            type="text"
+                            [(ngModel)]="actividad.titulo"
+                            required>
+                </mat-form-field>
+                <mat-form-field class="form-field">
+                    <mat-label>Instructor/a</mat-label>
+                    <input matInput
+                            type="text"
+                            [(ngModel)]="actividad.instructor"
+                            required>
+                </mat-form-field>
+            </div>
+
+
+
+            <div class="mat-form">
+
+                        <div class="together">
+                            <mat-form-field class="form-field">
+                                <mat-label>Id</mat-label>
+                                <input matInput
+                                        type="text"
+                                        [(ngModel)]="actividad.id"
+                                        required>
+                            </mat-form-field>
+                            
+                            <mat-form-field class="form-field">
+                                <mat-label>Está activa</mat-label>
+                                <input matInput
+                                        type="text"
+                                        [(ngModel)]="actividad.activa"
+                                        required>
+                            </mat-form-field>
+                        </div>
+                        <div class="together">
+                            <mat-form-field class="form-field">
+                                <mat-label>Inicio</mat-label>
+                                <input matInput
+                                        type="date"
+                                        [(ngModel)]="actividad.inicio"
+                                        required>
+                            </mat-form-field>
+                            
+                            <mat-form-field class="form-field">
+                                <mat-label>Duración</mat-label>
+                                <input matInput
+                                        type="time"
+                                        [(ngModel)]="actividad.duracion"
+                                        required>
+                            </mat-form-field>
+                        </div>
+                        <mat-form-field class="form-field">
+                            <mat-label>Descripción</mat-label>
+                            <textarea matInput 
+                                    type="text"
+                                    [(ngModel)]="actividad.descripcion"
+                                    required></textarea>
+                        </mat-form-field>
+                        <mat-form-field class="form-field">
+                            <mat-label>Categoría</mat-label>
+                            <mat-select required
+                            [(ngModel)]="actividad.categoria">
+                                <mat-option value="Escaner-corporal">Escaner corporal</mat-option>
+                                <mat-option value="Vipassana">Vipassana</mat-option>
+                                <mat-option value="Respiración-consciente">Respiración consciente</mat-option>
+                                <mat-option value="Mindfulness">Mindfulness</mat-option>
+                                <mat-option value="Metta">Metta</mat-option>
+                                <mat-option value="Otro-tipo-de-meditación">Otro tipo de meditación</mat-option>
+                                
+                            </mat-select>
+                        </mat-form-field>
+
+                        <br>
+                        <button mat-raised-button 
+                                color="primary"
+                                (click)="guardar()">
+                            <mat-icon>edit</mat-icon>
+                                Guardar
+                        </button>
+                </div><!--Fin del mat-form-->
+
+        </div>
+        <!--lado derecho al 50%-->
+        <div class="side-right">
+
+
+
+            <img [src] =" actividad | imagen" alt="imagen de la actividad" class="img">
+        </div>
+        
+        
+    </div>
+</div>
+

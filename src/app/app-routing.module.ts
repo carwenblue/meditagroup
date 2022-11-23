@@ -11,11 +11,14 @@ import { PerfilComponent } from './pages/perfil/perfil.component';
 import { BuscarComponent } from './pages/buscar/buscar.component';
 
 
+
 const routes: Routes = [
   
   {path:'actividades', component: ActividadesComponent},
   {path: 'buscar', component: BuscarComponent},
   {path:'contactanos', component: ContactanosComponent},
+  {path: 'agregar', component: AgregarComponent},
+  {path: 'editar/:id', component: AgregarComponent},
   {path:'home', component: HomeComponent},
   {path:':id', component: MostrarComponent},
   

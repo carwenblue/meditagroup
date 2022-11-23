@@ -17,6 +17,7 @@
           <strong>Duración</strong> {{actividad.duracion}}
         </p>
         <a [routerLink]="[]" class="btn btn-primary">Unirse</a>
+        <a [routerLink]="['/editar', actividad.id]" class="btn btn-primary">Editar</a>
         <a [routerLink]="['/' , actividad.id]" class="btn btn-primary">Ver actividad</a>
       </div>
     </div>

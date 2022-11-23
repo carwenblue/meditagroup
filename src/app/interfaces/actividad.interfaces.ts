@@ -1,13 +1,15 @@
 export interface Actividad {
     
-    id?:           string;
+    
+    titulo:        string;
+    instructor:    string;
+    descripcion:   string;
     inicio:        Date;
     duracion:      Date;
-    titulo:        string;
-    descripcion:   string;
+    id?:           string;
     categoria:     string;
     activa:        string;
-    instructor:    string;
+    
    
 
 }

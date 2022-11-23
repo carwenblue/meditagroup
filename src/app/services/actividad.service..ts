@@ -31,5 +31,16 @@ export class ActividadService {
 
   }
 
+  // Petición post que recibe una actividad y retorna una actividad
+  // Inyectamos el servicio en agregarActividad.ts
+  agregarActividad(actividad : Actividad): Observable <Actividad>{
+    return this.http.post<Actividad>(`${ this.urlDesarrollo}/actividad`, actividad);
+
+  }
+  actualizarActividad(actividad : Actividad): Observable <Actividad>{
+    return this.http.put<Actividad>(`${ this.urlDesarrollo}/actividad/${ actividad.id}`, actividad);
+
+  }
+
 
 }

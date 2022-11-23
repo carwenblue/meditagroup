@@ -20,6 +20,7 @@ import { BuscarComponent } from './buscar/buscar.component';
 
 
 
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -30,7 +31,8 @@ import { BuscarComponent } from './buscar/buscar.component';
     MostrarComponent,
     AgregarComponent,
     ImagenPipe,
-    BuscarComponent
+    BuscarComponent,
+  
     
   ],
   imports: [

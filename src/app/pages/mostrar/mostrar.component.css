@@ -17,3 +17,12 @@ small {
     white-space: normal;
     word-wrap: break-word;
 }
+@media screen and (max-width: 768px) {
+    .imagen {
+        width: 90%;
+        
+    }
+    .text-align {
+        text-align: center;
+    }
+  }
