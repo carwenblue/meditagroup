@@ -42,5 +42,10 @@ export class ActividadService {
 
   }
 
+  borrarActividad(actividad : Actividad): Observable <any>{
+    return this.http.delete<any>(`${ this.urlDesarrollo}/actividad/${ actividad.id}`);
+
+  }
+
 
 }

@@ -63,16 +63,6 @@
       "categoria": "Respiración consciente",
       "instructor": "Dorian",
       "activa": "Si"
-    },
-    {
-      "titulo": "Meditación Metta",
-      "descripcion": "El origen de la meditación metta precede los tiempos de Buda, ya que es mencionada, por ejemplo, en los Upanishads. Practicamos “metta” sin buscar sentir nada en especial, sin convertir el amor ni ningún sentimiento en un objetivo y sin olvidar que el acto de amor primordial es hacia uno mismo y consiste en respetar aquello que se está sintiendo en cada momento, aunque no nos guste o no sea lo que esperábamos sentir.",
-      "instructor": "Adrián",
-      "activa": "si",
-      "duracion": "00:30",
-      "inicio": "2023-01-07",
-      "categoria": "Metta",
-      "id": "yoXG3xM"
     }
   ]
 }

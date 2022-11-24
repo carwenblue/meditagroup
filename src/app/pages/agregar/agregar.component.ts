@@ -74,6 +74,14 @@ export class AgregarComponent implements OnInit {
     
   }
 
-
+borrarActividad (){
+  if ( this.actividad.id){
+  this.actividadService.borrarActividad( this.actividad )
+      .subscribe(resp => {
+    
+        this.router.navigate(['/actividades'])
+      })
+  }
+}
 
 }
