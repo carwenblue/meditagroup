@@ -20,7 +20,8 @@ export class AgregarComponent implements OnInit {
     duracion: new Date() ,
     inicio: new Date(),
     categoria:'',
-    id: ''
+    id: '',
+    image: ''
 
   }
 

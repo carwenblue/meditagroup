@@ -1,39 +1,70 @@
-.card-columns{
-    margin: 10px;
+.flex-container{
+    margin-top: 30px;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap; 
+    justify-content: center; 
+  
   }
-  .btn {
+.tarjeta-block{
+    flex-grow: 1;
+    
+    margin: 15px;
+    background-color: #E7F1C4;
+}
+.tarjeta-body {
+    text-align: center;
+}     
+
+.btn {
       margin: 10px;
       white-space: normal;
       word-wrap: break-word;
+}
+.img{  
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 330px;
+      
+}
+
+
+
+@media screen and (min-width: 1280px) {
+ 
+  
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .flex-container {
+    display: flex;
+      flex-direction: row;
+      justify-content: center; 
+
   }
-  @media screen and (min-width: 1280px) {
-      .card-img-top{
-          height: 300px;
-          width: 350px;
-          
-      }
-  }
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
-      .card-img-top{
-          height: 200px;
-          width: 200px;
-          
-      }
+  .tarjeta-block{
+    width: 100%;
+    background-color: #E7F1C4;
+}
      
       
-    }
-    @media screen and (max-width: 668px) {
-      .card-img-top{
-          height: 250px;
-          
-      }
+}
+@media screen and (max-width: 768px) {
+      
       .btn {
           font-size: 13px;
       }
-      .card-columns {
+      .flex-container {
+        display: flex;
           flex-direction: column;
+          justify-content: center; 
   
       }
+      .tarjeta-block{
+        
+        flex-grow: 1;
+        margin: 15px;
+        background-color: #E7F1C4;
+    }
+      
     }

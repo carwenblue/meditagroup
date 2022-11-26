@@ -5,9 +5,13 @@
   padding: 1.5em;
 
 }
-.span-logo {
+.perfil {
+  margin-right: 20px;
+}
+.logo {
   color: #5db0e6;
-  font-size:40px;
+  font-size:44px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .avatar {
     vertical-align: middle;
@@ -24,12 +28,22 @@
     margin: 20px;
     
   }
+  .btn {
+    display: inline-block;
+  }
+  .button {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border: none;
+    font-size: 0.875rem;
+    color: #3d3b3b;
+    font-weight: bold;
+  
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    cursor: pointer;
+  }
   /*MEDIA QUERIES*/
 @media screen and (max-width: 2000px) {
-  .span-logo {
-    font-size:24px;
-
-  }
   .navbar-toggler-icon{
     font-size: 14px;
   }
@@ -41,9 +55,11 @@
   }
   
   }
-  @media screen and (min-width: 1198px) {
-   .btn-close {
-      display: none!important;
-   }
-    
+  @media screen and (max-width: 600px) {
+    .logo {
+      color: #5db0e6;
+      font-size:28px;
+     
     }
+  }
+

@@ -9,7 +9,7 @@ export class ImagenPipe implements PipeTransform {
   transform(actividad: Actividad): unknown {
 
     if ( !actividad.id){
-      return 'assets/actividades/no-image.jpg';
+      return 'assets/no-image.jpg';
     } 
     
     // ej. assets/actividades/breathing.jpg

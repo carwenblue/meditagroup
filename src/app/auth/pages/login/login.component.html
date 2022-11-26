@@ -1,1 +1,56 @@
-<p>login works!</p>
+
+<div class="container ">
+ 
+   
+    <form class="column mt-5 custom-form" >
+        <div class="row justify-content-center" >
+            
+            <div >
+              
+                <input type="email"  
+                
+                [(ngModel)]="email"
+                placeholder="Email"
+                required="required"/>
+               
+                <input type="password" 
+                
+                [(ngModel)]="password" 
+                id="user"
+                placeholder="Password"
+                required="required">
+                <br>
+                <button [disabled]="" type="submit"
+                (click)="login()">Inicia sesión</button>
+            </div>
+        </div>
+
+    </form>
+    <form class="column mt-5 custom-form" >
+
+
+        <div class="row justify-content-center" >
+            <div>
+              
+                <input type="email"  
+                
+                [(ngModel)]="email"
+                placeholder="Email"
+                required="required"/>
+               
+                <input type="password" 
+                
+                [(ngModel)]="password" 
+                id="user"
+                placeholder="Password"
+                required="required">
+                <br>
+                <button [disabled]="" type="submit"
+                (click)="login()">Regístrate</button>
+            </div>
+        </div>
+        
+    </form>
+
+   
+</div>      

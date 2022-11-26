@@ -23,7 +23,7 @@
                 <br>
                 <h2>{{actividad.titulo}}</h2>
 
-                <img class="imagen" [src]="actividad | imagen" alt="imagen de la actividad">
+                <img  class="imagen" [src]="actividad | imagen" alt="imagen de la actividad">
             </div>
             <div class="col-lg-7 col-md-6 col-xs">
                 <br>
@@ -42,7 +42,8 @@
                         <mat-list-item>{{actividad.activa}}</mat-list-item>
                 </mat-list>
 
-                <button [routerLink]="[]" class="btn btn-primary">Unirse</button>
+                <a [routerLink]="[]" class="btn btn-primary">Unirse</a>
+                <a [routerLink]="['/editar', actividad.id]" class="btn btn-primary">Editar</a>
                 <button (click)="volver()" class="btn btn-primary">Volver</button>
             </div>
         </div>

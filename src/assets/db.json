@@ -1,36 +1,40 @@
 {
   "usuario": [
     {
-      "id_user": "usuario1",
+      "id": 1,
       "nombre": "Juan",
-      "contraseña": "juan123",
+      "password": "juan123",
       "email": "juan@gmail.com",
       "edad": 23,
       "rol": "aprendiz"
     },
     {
-      "id_user": "usuario2",
+      "id": 2,
       "nombre": "Dorian",
-      "contraseña": "dorian123",
+      "password": "dorian123",
       "email": "dorian@gmail.com",
       "edad": 33,
       "rol": "instructor"
     },
     {
-      "id_user": "usuario3",
+      "id": 3,
       "nombre": "Olivia",
-      "contraseña": "olivia123",
+      "password": "olivia123",
       "email": "olivia@gmail.com",
       "edad": 28,
       "rol": "aprendiz"
     },
     {
-      "id_user": "usuario4",
+      "id": 4,
       "nombre": "Lola",
-      "contraseña": "lola123",
+      "password": "lola123",
       "email": "lola@gmail.com",
       "edad": 24,
       "rol": "instructor"
+    },
+    {
+      "titulo": "Mindfulness",
+      "id": "mindfulness"
     }
   ],
   "actividad": [
@@ -63,6 +67,17 @@
       "categoria": "Respiración consciente",
       "instructor": "Dorian",
       "activa": "Si"
+    },
+    {
+      "titulo": "Vipassana-prueba1",
+      "descripcion": "",
+      "instructor": "",
+      "activa": "si",
+      "duracion": "00:20",
+      "inicio": "2022-12-11",
+      "categoria": "Vipassana",
+      "id": "67JgWIu",
+      "image": ""
     }
   ]
 }

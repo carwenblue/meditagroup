@@ -11,12 +11,16 @@ import { RouterModule } from '@angular/router';
 import { PagesModule } from './pages/pages.module';
 import { ShareModule } from './share/share.module';
 import { MaterialModule } from './material/material.module';
+import { FormsModule } from '@angular/forms';
+
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+   
   
    
   ],
@@ -27,8 +31,10 @@ import { MaterialModule } from './material/material.module';
     AppRoutingModule,
     RouterModule,
     MaterialModule,
+    FormsModule,
     ShareModule,
     PagesModule,
+   
   
 
     

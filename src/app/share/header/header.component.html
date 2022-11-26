@@ -1,11 +1,23 @@
 
 <div class="m-4">
-    <nav id="nav" class="navbar navbar-expand-xl bg-light">
+    <nav id="nav" class="navbar bg-light">
         <div class="container-fluid">
           <a href="#" class="navbar-brand" >
-            <span class="span-logo">Meditagroup</span>
+            <span class="logo">Meditagroup</span>
           </a>
-        
+
+          <!--Perfil-->
+          <ul class="nav navbar-nav ms-auto">
+          <li class="nav-item">
+            <a routerLink="/perfil" class="nav-item perfil justify-content-end nav-link" data-dismiss="modal" target="_blank">Perfil <span> {{auth.nombre}}</span>
+              <img routerLink="/perfil" src="assets/avatar-perfil/avatar.png" alt="Perfil" class="avatar" data-dismiss="modal" target="_blank">                    
+            </a>
+            
+            </li>
+            </ul>
+          
+
+        <!--Menú-->
           <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -29,19 +41,39 @@
                     <a routerLink="/contactanos" class="nav-item nav-link" data-dismiss="modal" target="_blank">Contáctanos</a>
                   </li>
                 </ul>
+               
                 <ul class="nav navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a routerLink="/perfil" class="nav-item justify-content-end nav-link" data-dismiss="modal" target="_blank">Perfil
-                      <img routerLink="/perfil" src="assets/avatar-perfil/avatar.png" alt="Perfil" class="avatar" data-dismiss="modal" target="_blank">                    
-                    </a>
-                    </li>
                  
-                  <button data-dismiss="modal" target="_blank" >Cerrar sesión</button>
+                            <!--Entrar sin loguearse-->
+         <div class="btn">
+          <button mat-raised-button color="primary"
+          (click)="sinLogin()">Entrar sin login</button>
+        </div>
+        <div class="btn">
+          <button mat-raised-button color="primary"
+          routerLink="auth/login">
+          Login
+          </button>
+        </div>
+         <!--Botón de cerrar sesión-->
+         <div class="btn">
+          <button mat-raised-button 
+                  color="warn"
+                  (click)="logout()">
+                  Cerrar sesión
+          
+          </button>
+        </div>
+
                 </ul>
+                
                 </div>
                
             </div>
+            
         </div>
+  
     </nav>
+       
     <router-outlet></router-outlet>
     
