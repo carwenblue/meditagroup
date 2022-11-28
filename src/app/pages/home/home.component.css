@@ -1,3 +1,6 @@
+.container-fluid{
+    margin-top: 20px;
+}
 .img-home-responsive {
     width: 100%;
     height: auto;

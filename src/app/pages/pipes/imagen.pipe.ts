@@ -6,15 +6,17 @@ import { Actividad } from '../../interfaces/actividad.interfaces';
 })
 export class ImagenPipe implements PipeTransform {
 
-  transform(actividad: Actividad): unknown {
-
-    if ( !actividad.id){
-      return 'assets/no-image.jpg';
-    } 
-    
-    // ej. assets/actividades/breathing.jpg
-    console.log (actividad);
+  transform(actividad: Actividad): string {
+    //Excepción para page de agregar (no hay imagen) y actividadades
+    if ( !actividad.id || !actividad.alt_img){
+      return 'assets/no-image-available.jpeg';
+    } else {
+        // ej. assets/actividades/breathing.jpg
+    //console.log (actividad);
     return `assets/actividades/${ actividad.id}.jpg`;
+    }
+    
+  
 
     
   }

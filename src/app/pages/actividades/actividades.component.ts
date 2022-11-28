@@ -9,6 +9,7 @@ import { ActividadService } from '../../services/actividad.service.';
 })
 export class ActividadesComponent implements OnInit{
  
+ 
   actividades: Actividad[] = []; // Arreglo de actividades
   
   

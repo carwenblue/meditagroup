@@ -27,13 +27,13 @@ export class HeaderComponent implements OnInit {
   }
 
   logout(){
-    this.router.navigate(['./auth/login']);
+    this.router.navigate(['./auth/home']);
 
   }
 
   sinLogin(){
     this.authService.logout()
-    this.router.navigate(['/home'])
+    this.router.navigate(['/actividades'])
   }
 
 }

@@ -9,7 +9,7 @@ export interface Actividad {
     id?:           string;
     categoria:     string;
     activa:        string;
-    image:           string; //http://...
+    alt_img:         string; //http://...
     
    
 

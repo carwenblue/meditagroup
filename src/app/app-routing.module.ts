@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { MostrarComponent } from './pages/mostrar/mostrar.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { BuscarComponent } from './pages/buscar/buscar.component';
+import { AuthGuard } from './auth/guards/auth.guard';
 
 
 
@@ -26,15 +27,20 @@ const routes: Routes = [
   },
   {path: 'buscar', component: BuscarComponent},
   {path:'contactanos', component: ContactanosComponent},
-  {path: 'agregar', component: AgregarComponent},
-  {path: 'editar/:id', component: AgregarComponent},
-  {
-    path:'home', component: HomeComponent
-  },
+  {path: 'agregar', component: AgregarComponent,
+  canLoad: [AuthGuard],
+  canActivate: [AuthGuard]
+},
+  {path: 'editar/:id', component: AgregarComponent,
+  canLoad: [AuthGuard],
+  canActivate: [AuthGuard]
+},
+  {path:'home', component: HomeComponent},
   {path:':id', component: MostrarComponent},
-  //{path:'404', component: ErrorComponent},
-  {path:'editar/:id', component: AgregarComponent},
-  {path:'perfil', component: PerfilComponent},
+  
+  {path:'perfil', component: PerfilComponent,
+  canLoad: [AuthGuard],
+  canActivate: [AuthGuard]},
   {path:'**', redirectTo:'home'},
 
 ];

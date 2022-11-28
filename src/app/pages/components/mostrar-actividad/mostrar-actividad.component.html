@@ -1,12 +1,12 @@
 
-    <div class="flex-container">
-      <div class="tarjeta-block">
+<div class="tarjeta-block">
      <!--  <img src="assets/actividades/{{actividad.id_act}}.jpg" class="card-img-top" alt="actividades de meditación">  --> 
       
      <!--Construimos un pipe para facilitar la actualización de imágenes, recibe la actividad y retorna el path comentado-->
-
+    <div>
      <img [src]=" actividad | imagen" class="img" alt="actividades de meditación" width="170" height="230">
-     
+   
+    </div>
      
      <div class="tarjeta-body">
         <h2 class="tarjeta-title">{{ actividad.titulo}}</h2>
@@ -18,6 +18,4 @@
        
         <a [routerLink]="['/' , actividad.id]" class="btn btn-primary">Ver actividad</a>
       </div>
-    </div>
-    </div>
- 
+</div>

@@ -71,9 +71,18 @@
                                     required></textarea>
                         </mat-form-field>
                         <mat-form-field class="form-field">
+                            <mat-label>Imagen</mat-label>
+                            <input matInput 
+                                    type="text"
+                                    [(ngModel)]="actividad.alt_img"
+                                    required>
+                            
+                        </mat-form-field>
+                        <mat-form-field class="form-field">
                             <mat-label>Categoría</mat-label>
                             <mat-select required
                             [(ngModel)]="actividad.categoria">
+                            {{actividad.categoria}}
                                 <mat-option value="Escaner-corporal">Escaner corporal</mat-option>
                                 <mat-option value="Vipassana">Vipassana</mat-option>
                                 <mat-option value="Respiración-consciente">Respiración consciente</mat-option>
@@ -88,7 +97,8 @@
                         <div class="button">
                             <button mat-raised-button 
                                 color="primary"
-                                (click)="guardar()">
+                                (click)="guardar()"
+                                >
                                 <mat-icon>edit</mat-icon>
                                 Guardar
                             </button>

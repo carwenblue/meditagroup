@@ -21,7 +21,7 @@ export class AgregarComponent implements OnInit {
     inicio: new Date(),
     categoria:'',
     id: '',
-    image: ''
+    alt_img: ''
 
   }
 
@@ -29,6 +29,8 @@ export class AgregarComponent implements OnInit {
   constructor(private actividadService: ActividadService, 
               private activatedRoute: ActivatedRoute, 
               private router : Router) { }
+
+
 
   ngOnInit(): void {
 
@@ -67,8 +69,8 @@ export class AgregarComponent implements OnInit {
         //Create actividad
         this.actividadService.agregarActividad( this.actividad )
         .subscribe ( actividad => {
-          console.log('Respuesta', actividad);
-          this.router.navigate ( ['/editar', actividad.id])
+          //console.log('Respuesta', actividad);
+          this.router.navigate ( ['/actividades'])
         })
     }
 

@@ -46,23 +46,27 @@
                  
                             <!--Entrar sin loguearse-->
          <div class="btn">
-          <button mat-raised-button color="primary"
-          (click)="sinLogin()">Entrar sin login</button>
+          <a type="button" class="btn btn-primary btn-sm"
+          routerLink="/home"
+          data-dismiss="modal" target="_blank">
+          Entrar sin login
+          </a>
         </div>
         <div class="btn">
-          <button mat-raised-button color="primary"
-          routerLink="auth/login">
+          <a type="button" class="btn btn-primary btn-sm"
+          routerLink="auth/login"
+          data-dismiss="modal" target="_blank">
           Login
-          </button>
+        </a>
         </div>
-         <!--Botón de cerrar sesión-->
+         <!--Botón de cerrar sesión  (click)="logout()"-->
          <div class="btn">
-          <button mat-raised-button 
-                  color="warn"
-                  (click)="logout()">
+          <a type="button" class="btn btn-primary btn-sm"
+                  routerLink="auth/login"
+                  data-dismiss="modal" target="_blank">
                   Cerrar sesión
           
-          </button>
+         </a>
         </div>
 
                 </ul>
