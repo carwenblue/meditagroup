@@ -1,0 +1,51 @@
+.bloque{
+    display: flex;
+    justify-content: center;
+    
+}
+.fondo{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: aliceblue;
+    border-radius: 30px;
+}
+.contactanos{
+    font-size: 25px;
+}
+.subscribete{
+    margin-left: 32px;
+    font-size: 15px;
+}
+.filaemail{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.filaemailcampo{
+    border: 0px;
+}
+.filaemailboton{
+    padding: 10px;
+    border: 0px;
+}
+.iconos{
+    display: flex;
+    justify-content: space-between;
+}
+.icono{
+    width: 80px;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 640px) {
+    .filaemail{
+        display: flex;
+        justify-content: flex-start
+    }
+    .filaemailcampo{
+        margin-right: 10px;
+    }
+  }
