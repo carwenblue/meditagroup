@@ -5,13 +5,12 @@
     <form class="column mt-5 custom-form" 
     autocomplete="off"
     [formGroup]="miFormulario" 
-    (ngSubmit)="login()">
+    (ngSubmit)="registro()">
         <div class="row justify-content-center" >
             
             <div >
               
                 <input type="email"  
-                
                 placeholder="Email"
                 class="form-control"
                 formControlName="email"
@@ -23,7 +22,6 @@
                 </span>
                 
                 <input type="password" 
-                
                 class="form-control"
                 formControlName="password"
                 placeholder="Password"
@@ -31,30 +29,31 @@
 
                 <span *ngIf="campoObligatorio ('password')"
                 class="form-text text-danger">
-                    La contraseña debe ser mayor de 4 caracteres
+                    La contraseña debe ser mayor de 8 caracteres
                 </span>
 
+                    
+                <input type="password" 
+                class="form-control"
+                formControlName="confirmarPassword"
+                placeholder="Confirmar la contraseña"
+                required="required">
+
+                
+                <span *ngIf="campoObligatorio ('confirmarPassword')"
+                class="form-text text-danger">
+                    Las contraseñas deben ser iguales
+                </span>
                 <br>
+
+
                 <button type="submit"
-                [disabled]="">Inicia sesión</button>
+                [disabled]="">Registrar</button>
             </div>
         </div>
         <br>
         <br>
-        <div>
-            <span>
-                ¿No tienes cuenta?
-            </span>
-
-            <a routerLink="/auth/registro">
-                Regístrate aquí
-            </a>
-        </div>
+        
 
     </form>
-
-   
-
-   
-</div>      
 

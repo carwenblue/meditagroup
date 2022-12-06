@@ -9,8 +9,11 @@
           <!--Perfil-->
           <ul class="nav navbar-nav ms-auto">
           <li class="nav-item">
-            <a routerLink="/perfil" class="nav-item perfil justify-content-end nav-link" data-dismiss="modal" target="_blank">Perfil <span> {{auth.nombre}}</span>
-              <img routerLink="/perfil" src="assets/avatar-perfil/avatar.png" alt="Perfil" class="avatar" data-dismiss="modal" target="_blank">                    
+            <a [routerLink]="['/perfil', auth.id]"
+            class="nav-item perfil justify-content-end nav-link" 
+            data-dismiss="modal" target="_blank">Perfil <span> {{auth.nombre}}</span>
+              <img [routerLink]="['/perfil', auth.id]"  
+              src="assets/avatar-perfil/avatar.png" alt="Perfil" class="avatar" data-dismiss="modal" target="_blank">                    
             </a>
             
             </li>
@@ -44,40 +47,52 @@
                
                 <ul class="nav navbar-nav ms-auto">
                  
-                            <!--Entrar sin loguearse-->
-         <div class="btn">
-          <a type="button" class="btn btn-primary btn-sm"
-          routerLink="/home"
-          data-dismiss="modal" target="_blank">
-          Entrar sin login
-          </a>
-        </div>
-        <div class="btn">
-          <a type="button" class="btn btn-primary btn-sm"
-          routerLink="auth/login"
-          data-dismiss="modal" target="_blank">
-          Login
+       <!--Entrar sin loguearse-->
+        
+       <div class="btn">
+        <a type="button" class="btn btn-primary btn-sm"
+        routerLink="/home"
+        data-dismiss="modal" target="_blank">
+        Entrar sin login
         </a>
-        </div>
-         <!--Botón de cerrar sesión  (click)="logout()"-->
-         <div class="btn">
-          <a type="button" class="btn btn-primary btn-sm"
-                  routerLink="auth/login"
-                  data-dismiss="modal" target="_blank">
-                  Cerrar sesión
-          
-         </a>
-        </div>
-
-                </ul>
-                
-                </div>
-               
-            </div>
-            
-        </div>
-  
-    </nav>
-       
-    <router-outlet></router-outlet>
+      </div>
     
+                        
+   
+    <div class="btn">
+      <a type="button" class="btn btn-primary btn-sm"
+      *ngIf="!auth.id; else viewLogout"
+      routerLink="auth/login"
+      data-dismiss="modal" target="_blank">
+      Login
+    </a>
+    </div>
+
+ <!--Botón de cerrar sesión opcional solo aparece cuando está logueado-->
+    <ng-template #viewLogout>
+         
+      <div class="btn">
+        <a type="button" class="btn btn-primary btn-sm"
+              routerLink="auth/login"
+              (click)="logout()"
+              data-dismiss="modal" target="_blank">
+              Cerrar sesión
+      
+        </a>
+      </div>
+
+    </ng-template>
+    
+ 
+
+            </ul>
+            
+            </div>
+           
+        </div>
+        
+    </div>
+
+</nav>
+   
+<router-outlet></router-outlet>

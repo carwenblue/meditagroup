@@ -1,1 +1,101 @@
-<p>perfil works!</p>
+
+<div class="container-fluid">
+
+    <h2>Perfil <small></small></h2>
+
+    <div class="row">
+
+        <!--Lado izquierdo al 50%-->
+        <div class="side-left">
+
+            <div class="together">
+                <mat-form-field class="form-field">
+                    
+                    <mat-label>Id</mat-label>
+                    <input matInput
+                            type="number"
+                            [(ngModel)]="_usuario.id"
+                            required>
+                </mat-form-field>
+                <mat-form-field class="form-field">
+                    <mat-label>Nombre</mat-label>
+                    <input matInput
+                            type="text"
+                            [(ngModel)]="_usuario.nombre"
+                            required>
+                </mat-form-field>
+            
+            </div>
+
+
+
+            <div class="mat-form">
+
+                        <div class="together">
+                            <mat-form-field class="form-field">
+                                <mat-label>Password</mat-label>
+                                <input matInput
+                                        type="text"
+                                        [(ngModel)]="_usuario.password"
+                                        required>
+                            </mat-form-field>
+                            
+                            <mat-form-field class="form-field">
+                                <mat-label>Email</mat-label>
+                                <input matInput
+                                        type="email"
+                                        [(ngModel)]="_usuario.email">
+                            </mat-form-field>
+                        </div>
+                        <div class="together">
+
+                            
+                            <mat-form-field class="form-field">
+                                <mat-label>Edad</mat-label>
+                                <input matInput
+                                        type="number"
+                                        [(ngModel)]="_usuario.edad"
+                                        required>
+                            </mat-form-field>
+                            <mat-form-field class="form-field">
+                                <mat-label>Rol</mat-label>
+                                <mat-select
+                                [(ngModel)]="_usuario.rol">
+                                {{_usuario.rol}}
+                                    <mat-option value="aprendiz">Aprendiz</mat-option>
+                                    <mat-option value="instructor">Instructor</mat-option>
+                                    
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                       
+                       
+                       
+
+                        <br>
+                        <div class="button">
+                            <button mat-raised-button 
+                                color="primary"
+                                (click)="guardar()"
+                                >
+                                <mat-icon>edit</mat-icon>
+                                Guardar
+                            </button>
+
+                        
+                        </div>
+                </div><!--Fin del mat-form-->
+
+        </div>
+        <!--lado derecho al 50%-->
+        <div class="side-right">
+
+
+
+           
+        </div>
+        
+        
+    </div>
+</div>
+

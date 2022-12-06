@@ -8,10 +8,10 @@ import { HttpClientModule } from "@angular/common/http";
 
 import { RouterModule } from '@angular/router';
 
-import { PagesModule } from './pages/pages.module';
 import { ShareModule } from './share/share.module';
 import { MaterialModule } from './material/material.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PagesModule } from './pages/pages.module';
 
 
 
@@ -34,6 +34,8 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     ShareModule,
     PagesModule,
+    FormsModule,
+    ReactiveFormsModule
    
   
 

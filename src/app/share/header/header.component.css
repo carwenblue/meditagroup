@@ -55,7 +55,17 @@
   }
   
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 461px) and (max-width: 600px){
+    .logo {
+      color: #5db0e6;
+      font-size:24px;
+     
+    }
+    .perfil {
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 460px) {
     .logo {
       color: #5db0e6;
       font-size:18px;
@@ -78,4 +88,3 @@
     }
     
   }
-

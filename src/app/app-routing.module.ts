@@ -38,9 +38,7 @@ const routes: Routes = [
   {path:'home', component: HomeComponent},
   {path:':id', component: MostrarComponent},
   
-  {path:'perfil', component: PerfilComponent,
-  canLoad: [AuthGuard],
-  canActivate: [AuthGuard]},
+  {path:'perfil/:id', component: PerfilComponent},
   {path:'**', redirectTo:'home'},
 
 ];
