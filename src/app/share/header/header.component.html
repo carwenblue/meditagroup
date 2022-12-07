@@ -24,7 +24,7 @@
           <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" >
+            <div class="offcanvas offcanvas-end"  tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" >
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>   
               <div class="offcanvas-body">
               <ul class="navbar-left navbar-nav">
@@ -52,7 +52,7 @@
        <div class="btn">
         <a type="button" class="btn btn-primary btn-sm"
         routerLink="/home"
-        data-dismiss="modal" target="_blank">
+        data-dismiss="modal" target="_parent">
         Entrar sin login
         </a>
       </div>
@@ -63,7 +63,7 @@
       <a type="button" class="btn btn-primary btn-sm"
       *ngIf="!auth.id; else viewLogout"
       routerLink="auth/login"
-      data-dismiss="modal" target="_blank">
+      data-dismiss="modal" target="_parent">
       Login
     </a>
     </div>
@@ -75,7 +75,7 @@
         <a type="button" class="btn btn-primary btn-sm"
               routerLink="auth/login"
               (click)="logout()"
-              data-dismiss="modal" target="_blank">
+              data-dismiss="modal" target="_parent">
               Cerrar sesión
       
         </a>
