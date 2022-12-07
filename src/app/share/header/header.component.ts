@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Auth } from 'src/app/auth/interfaces/auth.interfaces';
+
+// Componentes de la aplicación
 import { AuthService } from 'src/app/auth/services/auth.service';
 import { Usuario } from 'src/app/interfaces/usuario.interfaces';
 

@@ -1,3 +1,8 @@
+container-fluid{
+    display: flex;
+    flex-direction: row;
+}
+
 h2 {
     margin-top: 40px;
 }
@@ -40,10 +45,11 @@ h2 {
 }
 
 
- @media screen and (max-width: 992px) {
-        .row {
-         display: flex;
-         flex-direction: column;
-        }
-         
+
+@media screen and (max-width: 648px) {
+    .together{
+        display: flex;
+        flex-direction: column;
+    }
+  
 }

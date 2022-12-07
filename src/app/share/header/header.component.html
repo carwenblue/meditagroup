@@ -7,11 +7,11 @@
           </a>
 
           <!--Perfil-->
-          <ul class="nav navbar-nav ms-auto">
+          <ul class="nav navbar-nav ms-auto xs-0">
           <li class="nav-item">
             <a [routerLink]="['/perfil', auth.id]"
             class="nav-item perfil justify-content-end nav-link" 
-            data-dismiss="modal" target="_blank">Perfil <span> {{auth.nombre}}</span>
+            data-dismiss="modal" target="_blank"><span *ngIf="auth.nombre">Welcome {{auth.nombre}}</span>
               <img [routerLink]="['/perfil', auth.id]"  
               src="assets/avatar-perfil/avatar.png" alt="Perfil" class="avatar" data-dismiss="modal" target="_blank">                    
             </a>

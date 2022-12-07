@@ -28,17 +28,16 @@ const routes: Routes = [
   {path: 'buscar', component: BuscarComponent},
   {path:'contactanos', component: ContactanosComponent},
   {path: 'agregar', component: AgregarComponent,
-  canLoad: [AuthGuard],
   canActivate: [AuthGuard]
 },
   {path: 'editar/:id', component: AgregarComponent,
-  canLoad: [AuthGuard],
   canActivate: [AuthGuard]
 },
   {path:'home', component: HomeComponent},
   {path:':id', component: MostrarComponent},
   
   {path:'perfil/:id', component: PerfilComponent},
+
   {path:'**', redirectTo:'home'},
 
 ];
