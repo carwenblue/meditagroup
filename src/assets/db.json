@@ -47,7 +47,8 @@
       "categoria": "Escaner Corporal",
       "instructor": "Adrián",
       "activa": "Si",
-      "alt_img": "escaner"
+      "alt_img": "escaner",
+      "link": "https://www.youtube.com/channel/UCD0ajkG8vtGDKlfFRMvYbyQ"
     },
     {
       "id": "breathing",
@@ -58,7 +59,8 @@
       "categoria": "Respiración consciente",
       "instructor": "Lola",
       "activa": "No",
-      "alt_img": "breathing"
+      "alt_img": "breathing",
+      "link": "https://www.youtube.com/channel/UCD0ajkG8vtGDKlfFRMvYbyQ"
     },
     {
       "id": "vipassana",
@@ -69,7 +71,8 @@
       "categoria": "Respiración consciente",
       "instructor": "Dorian",
       "activa": "Si",
-      "alt_img": "vipassana"
+      "alt_img": "vipassana",
+      "link": "https://www.youtube.com/channel/UCD0ajkG8vtGDKlfFRMvYbyQ"
     },
     {
       "titulo": "Metta 3",
@@ -80,7 +83,8 @@
       "inicio": "2022-12-03",
       "categoria": "",
       "id": "419l-Ff",
-      "alt_img": ""
+      "alt_img": "",
+      "link": "https://www.youtube.com/channel/UCD0ajkG8vtGDKlfFRMvYbyQ"
     }
   ]
 }

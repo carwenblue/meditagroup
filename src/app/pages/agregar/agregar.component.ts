@@ -21,8 +21,8 @@ export class AgregarComponent implements OnInit {
     inicio: new Date(),
     categoria:'',
     id: '',
-    alt_img: ''
-
+    alt_img: '',
+    link: ''
   }
 
   // Si queremos guardar el url usamos el activatedRoute

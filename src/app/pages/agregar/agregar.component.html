@@ -71,6 +71,13 @@
                                     required></textarea>
                         </mat-form-field>
                         <mat-form-field class="form-field">
+                            <mat-label>Link</mat-label>
+                            <textarea matInput
+                                    type="text"
+                                    [(ngModel)]="actividad.link"
+                                    required></textarea>
+                        </mat-form-field>
+                        <mat-form-field class="form-field">
                             <mat-label>Imagen</mat-label>
                             <input matInput 
                                     type="text"
@@ -104,7 +111,7 @@
                             </button>
 
                             <span class="spacer"></span>
-
+                        
                         
                             <button *ngIf="actividad.id"
                                     mat-raised-button

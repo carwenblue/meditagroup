@@ -34,8 +34,4 @@ export class MostrarComponent implements OnInit {
   volver(){
     this.router.navigate(['/actividades']);
   }
-
- 
-  
-  
 }
