@@ -2,7 +2,7 @@
 
 .container-fluid {
   display: flex;
-  padding: 1.5em;
+  padding: 1em;
 
 }
 .perfil {
@@ -55,27 +55,44 @@
   }
   
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 461px) and (max-width: 600px){
     .logo {
       color: #5db0e6;
-      font-size:18px;
+      font-size:24px;
      
     }
     .perfil {
-      font-size: 12px;
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 460px) {
+    .logo {
+      color: #5db0e6;
+      font-size:16px;
+      margin: auto;
+     
+    }
+    .navbar-brand {
+      margin: 0;
+    }
+    .nav {
+      margin: 0;
+    }
+    .perfil {
+      font-size: 14px;
     }
     .navbar-toggler-icon{
       font-size: 10px;
     }
+   
     .avatar {
       vertical-align: middle;
-      width: 30px;
-      height: 30px;
+      width: 20px;
+      height: 20px;
       border-radius: 50%;
     }
     .perfil {
-      margin-right: 5px;
+      margin-right: 3px;
     }
     
   }
-

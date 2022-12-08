@@ -1,0 +1,55 @@
+container-fluid{
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    margin-top: 40px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+   
+    height: 100%;
+}
+.side-left {
+    flex: 2;
+}
+.side-right {
+   flex: 1;
+}
+.together {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.mat-form{
+    display: flex;
+    flex-direction: column;
+   
+}
+.img {
+    width: 100%;
+    height: 300px;
+}
+
+
+.form-field {
+    flex: 100%;
+   
+}
+.button {
+    display: flex;
+}
+
+
+
+@media screen and (max-width: 648px) {
+    .together{
+        display: flex;
+        flex-direction: column;
+    }
+  
+}
