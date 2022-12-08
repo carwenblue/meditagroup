@@ -42,8 +42,8 @@
                        
                 </mat-list>
 
-                <a [routerLink]="[]" class="btn btn-primary">Unirse</a>
-                <a [routerLink]="['/editar', actividad.id]" class="btn btn-primary">Editar</a>
+                <button type="button" [routerLink]="[]" class="btn btn-primary" (click)="alert()">Unirse</button>
+                <button [routerLink]="['/editar', actividad.id]" class="btn btn-primary">Editar</button>
                 <button (click)="volver()" class="btn btn-primary">Volver</button>
             </div>
         </div>
