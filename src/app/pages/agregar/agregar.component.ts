@@ -18,6 +18,7 @@ export class AgregarComponent implements OnInit {
     instructor:'',
     activa:'',
     duracion: new Date() ,
+    hora: new Date(),
     inicio: new Date(),
     categoria:'',
     id: '',

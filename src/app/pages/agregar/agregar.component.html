@@ -45,6 +45,13 @@
                                         [(ngModel)]="actividad.activa"
                                         required>
                             </mat-form-field>
+                            <mat-form-field class="form-field">
+                                <mat-label>Hora</mat-label>
+                                <input matInput
+                                        type="time"
+                                        [(ngModel)]="actividad.hora"
+                                        required>
+                            </mat-form-field>
                         </div>
                         <div class="together">
                             <mat-form-field class="form-field">
@@ -54,6 +61,7 @@
                                         [(ngModel)]="actividad.inicio"
                                         required>
                             </mat-form-field>
+                         
                             
                             <mat-form-field class="form-field">
                                 <mat-label>Duración</mat-label>
