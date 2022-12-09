@@ -40,8 +40,15 @@ constructor(private router: Router, private authService: AuthService, private fb
     // LLamada al servicio
     this.authService.registro(nombre, email, password)
     .subscribe ( resp => {
-      console.log(resp);
+      if(resp){
+        console.log(resp);
         this.router.navigateByUrl('/actividades');
+        Swal.fire('¡Bienvenido/a!','Te has registrado correctamente', 'success');
+
+      }else {
+        Swal.fire('Error', 'Correo ya está en uso', 'error');
+
+      }
       
     })
     

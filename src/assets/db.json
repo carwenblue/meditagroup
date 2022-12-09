@@ -33,13 +33,25 @@
       "rol": "instructor"
     },
     {
-      "titulo": "Mindfulness",
-      "id": "mindfulness"
+      "email": "dorian@gmail.com",
+      "password": "dorian123",
+      "id": 5
     },
     {
-      "email": "Adrián",
-      "password": "adrian@gmail.com",
-      "id": 5
+      "email": "dorian@gmail.com",
+      "password": "dorian123",
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "email": "juan@gmail.com",
+      "password": "juan123",
+      "id": 9
     }
   ],
   "actividad": [
@@ -83,17 +95,30 @@
       "link": "https://www.youtube.com/channel/UCD0ajkG8vtGDKlfFRMvYbyQ"
     },
     {
-      "titulo": "Metta 3",
+      "titulo": "Vippasana prueba 4",
       "descripcion": "",
       "instructor": "Dorian",
-      "activa": "",
-      "duracion": "00:15",
-      "hora": "20:30",
-      "inicio": "2022-12-03",
-      "categoria": "",
-      "id": "419l-Ff",
+      "activa": "si",
+      "duracion": "00:20",
+      "hora": "15:30",
+      "inicio": "2022-12-30",
+      "categoria": "Vipassana",
+      "id": "hBWvhsQ",
       "alt_img": "",
-      "link": "https://www.youtube.com/channel/UCD0ajkG8vtGDKlfFRMvYbyQ"
+      "link": ""
+    },
+    {
+      "titulo": "Vippasana prueba 5",
+      "descripcion": "",
+      "instructor": "Adrian",
+      "activa": "si",
+      "duracion": "00:30",
+      "hora": "00:20",
+      "inicio": "2022-12-24",
+      "categoria": "",
+      "id": "UtRVeoS",
+      "alt_img": "",
+      "link": ""
     }
   ]
 }

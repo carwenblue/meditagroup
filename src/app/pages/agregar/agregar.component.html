@@ -34,8 +34,7 @@
                                 <mat-label>Id</mat-label>
                                 <input matInput
                                         type="text"
-                                        [(ngModel)]="actividad.id"
-                                        required>
+                                        [(ngModel)]="actividad.id">
                             </mat-form-field>
                             
                             <mat-form-field class="form-field">
@@ -75,27 +74,24 @@
                             <mat-label>Descripción</mat-label>
                             <textarea matInput 
                                     type="text"
-                                    [(ngModel)]="actividad.descripcion"
-                                    required></textarea>
+                                    [(ngModel)]="actividad.descripcion"></textarea>
                         </mat-form-field>
                         <mat-form-field class="form-field">
                             <mat-label>Link</mat-label>
                             <textarea matInput
                                     type="text"
-                                    [(ngModel)]="actividad.link"
-                                    required></textarea>
+                                    [(ngModel)]="actividad.link"></textarea>
                         </mat-form-field>
                         <mat-form-field class="form-field">
                             <mat-label>Imagen</mat-label>
                             <input matInput 
                                     type="text"
-                                    [(ngModel)]="actividad.alt_img"
-                                    required>
+                                    [(ngModel)]="actividad.alt_img">
                             
                         </mat-form-field>
                         <mat-form-field class="form-field">
                             <mat-label>Categoría</mat-label>
-                            <mat-select required
+                            <mat-select 
                             [(ngModel)]="actividad.categoria">
                             {{actividad.categoria}}
                                 <mat-option value="Escaner-corporal">Escaner corporal</mat-option>

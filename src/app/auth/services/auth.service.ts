@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../../environments/environment';
 
-import { tap, Observable, map, catchError } from 'rxjs';
+import { tap, Observable, map, catchError, of } from 'rxjs';
 import { User, Usuario } from '../../interfaces/usuario.interfaces';
 
 @Injectable({
@@ -26,7 +26,7 @@ export class AuthService {
     if( !localStorage.getItem('token')){
     return false;
     }
-    return this.http.get<Usuario>(`${ this.urlDesarrollo}/usuario/1`)
+    return this.http.get<Usuario>(`${ this.urlDesarrollo}/usuario/2`)
         .pipe(
           map( auth => {
             console.log('map', auth);
@@ -42,7 +42,7 @@ export class AuthService {
     return this.http.post<User>(url, body)
     .pipe(
       tap( resp => {
-        localStorage.setItem('token', resp.id);
+        localStorage.setItem('token', resp.email);
         this._auth = {
           id: resp.id,
           nombre: resp.nombre,
@@ -50,23 +50,26 @@ export class AuthService {
           password: resp.password
         }
       }),
-      map( resp => resp.id)
+      // El Map transforma la respuesta y es lo que muestra en consola
+      map( resp => resp.id),
+      catchError(err => of(err))
     );
 
     
 
   }
 
+  
   login(){
     // Si ponemos una ruta no válida protege esa ruta
-    return this.http.get<Usuario>(`${ this.urlDesarrollo}/usuario/1`)
+    return this.http.get<Usuario>(`${ this.urlDesarrollo}/usuario/2`)
           .pipe(
             //tap( resp => console.log ('AUTHSERVICE', resp))
             // Paso por el login y lo almaceno en el localstorage
             tap( auth => this._auth = auth),
             tap( auth => {
               if(auth.id){
-                localStorage.setItem('token', auth.id)
+                localStorage.setItem('token', auth.email)
               }
             }));
                 
