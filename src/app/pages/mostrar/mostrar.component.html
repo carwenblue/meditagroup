@@ -32,25 +32,23 @@
                         <h4><strong>Descripción de la actividad</strong></h4>
                         <h3>{{actividad.descripcion}}</h3>
 
-                        <mat-divider></mat-divider>
-                            <mat-list>
-                                <p><strong>Inicio : </strong></p>
-                                <mat-list-item>{{actividad.inicio}}</mat-list-item>
-                                <p><strong>Duración : </strong></p>
-                                <mat-list-item>{{actividad.duracion}} minutos</mat-list-item>
-                                <p><strong>Instructor : </strong></p>
-                                <mat-list-item>{{actividad.instructor}}</mat-list-item>
-                            
-                        </mat-list>
+                <mat-divider></mat-divider>
+                    <mat-list>
+                        <p><strong>Inicio : </strong></p>
+                        <mat-list-item>{{actividad.inicio}}</mat-list-item>
+                        <p><strong>Hora : </strong></p>
+                        <mat-list-item>{{actividad.hora}}</mat-list-item>
+                        <p><strong>Duración : </strong></p>
+                        <mat-list-item>{{actividad.duracion}} minutos</mat-list-item>
+                        <p><strong>Instructor : </strong></p>
+                        <mat-list-item>{{actividad.instructor}}</mat-list-item>
+                       
+                </mat-list>
 
-                        <a [routerLink]="[]" class="btn btn-primary">Unirse</a>
-                        <a [routerLink]="['/editar', actividad.id]" class="btn btn-primary">Editar</a>
-                        <button (click)="volver()" class="btn btn-primary">Volver</button>
-                    </div>
-                </div>
+                <button type="button" [routerLink]="[]" class="btn btn-primary" (click)="alert()">Unirse</button>
+                <button [routerLink]="['/editar', actividad.id]" class="btn btn-primary">Editar</button>
+                <button (click)="volver()" class="btn btn-primary">Volver</button>
             </div>
         </div>
     </div>
-
-</ng-template>
 

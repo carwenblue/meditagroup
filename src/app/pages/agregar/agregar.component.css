@@ -58,4 +58,10 @@ h2 {
         }
          
 }
-
+@media screen and (max-width: 692px) {
+    .together {
+     display: flex;
+     flex-direction: column;
+    }
+     
+}

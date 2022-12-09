@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import Swal from "sweetalert2";
+
+// Service
 import { AuthService } from '../../services/auth.service';
 
 
@@ -15,13 +18,9 @@ export class LoginComponent{
   
   // validaciones Formulario reactivo--->  html 
   miFormulario: FormGroup = this.fb.group ({
-    email:    ['', [ Validators.required]],
-    password: ['', [ Validators.required, Validators.minLength(4)]],
+    email:    ['dorian@gmail.com', [ Validators.required]],
+    password: ['dorian123', [ Validators.required, Validators.minLength(4)]],
   })
-
-
-  email!: string;
-  password!: string;
 
 
   constructor( private router: Router, private authService: AuthService, private fb: FormBuilder) { }
@@ -32,10 +31,7 @@ export class LoginComponent{
   }
 
   login(){
-   
-    //Ir al backend y verificar usuario existe
-    //Un usuario almacenado en una servicio
-    //Navegar a la pantalla actividades: 
+    // LLamamos al servicio y navegamos a la pantalla actividades: 
     this.authService.login()
     .subscribe(resp => { 
       console.log(resp);
@@ -50,7 +46,6 @@ export class LoginComponent{
     
 
   }
-
   sinLogin(){
     this.authService.logout()
     this.router.navigate(['/home'])

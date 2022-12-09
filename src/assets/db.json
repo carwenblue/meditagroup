@@ -33,8 +33,25 @@
       "rol": "instructor"
     },
     {
-      "titulo": "Mindfulness",
-      "id": "mindfulness"
+      "email": "dorian@gmail.com",
+      "password": "dorian123",
+      "id": 5
+    },
+    {
+      "email": "dorian@gmail.com",
+      "password": "dorian123",
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "email": "juan@gmail.com",
+      "password": "juan123",
+      "id": 9
     }
   ],
   "actividad": [
@@ -42,6 +59,7 @@
       "id": "escaner",
       "inicio": "2022-12-28",
       "duracion": "00:22",
+      "hora": "19:30",
       "titulo": "Mindfulness con Escaner corporal",
       "descripcion": "Es un tipo de meditación habitual en el mindfulness. Durante la meditación del escáner corporal, el individuo realiza una revisión mental de su estado físico y hacer consciencia sobre las sensaciones que experimenta cada parte del cuerpo.",
       "categoria": "Escaner Corporal",
@@ -54,6 +72,7 @@
       "id": "breathing",
       "inicio": "2022-12-27",
       "duracion": "00:30",
+      "hora": "18:30",
       "titulo": "Respiración consciente",
       "descripcion": "Esta práctica de respiración meditativa puede ayudarte a calmar tu mente, mejorar tu concentración y centrarte. La respiración consciente es simplemente la práctica de concentrarse en la respiración durante la práctica de la meditación. De todos los procesos automáticos que realiza el cuerpo, sólo unos pocos son controlables. La respiración es uno de ellos.",
       "categoria": "Respiración consciente",
@@ -66,6 +85,7 @@
       "id": "vipassana",
       "inicio": "2022-12-24",
       "duracion": "00:30",
+      "hora": "19:30",
       "titulo": "Meditación Vipassana",
       "descripcion": "Se trata de una de las formas de meditación más antiguas conocidas, y se basa en la purificación y transformación personal a través de la auto-observación. De hecho, Vipassana significa, aproximadamente, ver las cosas claramente o tal y como son. La atención del alumno se dirige cuidadosamente a un examen intenso de ciertos aspectos de su propia existencia.",
       "categoria": "Respiración consciente",
@@ -75,16 +95,30 @@
       "link": "https://www.youtube.com/channel/UCD0ajkG8vtGDKlfFRMvYbyQ"
     },
     {
-      "titulo": "Metta 3",
+      "titulo": "Vippasana prueba 4",
       "descripcion": "",
       "instructor": "Dorian",
-      "activa": "",
-      "duracion": "00:15",
-      "inicio": "2022-12-03",
-      "categoria": "",
-      "id": "419l-Ff",
+      "activa": "si",
+      "duracion": "00:20",
+      "hora": "15:30",
+      "inicio": "2022-12-30",
+      "categoria": "Vipassana",
+      "id": "hBWvhsQ",
       "alt_img": "",
-      "link": "https://www.youtube.com/channel/UCD0ajkG8vtGDKlfFRMvYbyQ"
+      "link": ""
+    },
+    {
+      "titulo": "Vippasana prueba 5",
+      "descripcion": "",
+      "instructor": "Adrian",
+      "activa": "si",
+      "duracion": "00:30",
+      "hora": "00:20",
+      "inicio": "2022-12-24",
+      "categoria": "",
+      "id": "UtRVeoS",
+      "alt_img": "",
+      "link": ""
     }
   ]
 }

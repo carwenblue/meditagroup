@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { switchMap } from 'rxjs/operators';
+import Swal from "sweetalert2";
+
 import { ActividadService } from '../../services/actividad.service.';
 import { Actividad } from 'src/app/interfaces/actividad.interfaces';
-import { switchMap } from 'rxjs/operators';
+
 
 
 
@@ -30,8 +33,14 @@ export class MostrarComponent implements OnInit {
    //.subscribe(({id})=> console.log(id));
    .subscribe( actividad => this.actividad = actividad);
   }
-
+ 
   volver(){
     this.router.navigate(['/actividades']);
   }
+
+  alert(){
+    Swal.fire('Buen trabajo','Te has unido a esta actividad', 'success');
+  }
 }
+
+
