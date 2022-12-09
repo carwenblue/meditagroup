@@ -65,7 +65,7 @@
     .logo {
       color: #5db0e6;
       font-size:24px;
-     
+      height: 80px;
     }
     .perfil {
       font-size: 14px;
@@ -76,7 +76,8 @@
       color: #5db0e6;
       font-size:16px;
       margin: auto;
-     
+      height: 60px;
+      border-radius: 20px;
     }
     .navbar-brand {
       margin: 0;
@@ -93,12 +94,12 @@
    
     .avatar {
       vertical-align: middle;
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
       border-radius: 50%;
     }
     .perfil {
-      margin-right: 3px;
+      margin-right: 10px;
     }
     
   }
