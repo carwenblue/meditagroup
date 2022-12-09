@@ -4,9 +4,9 @@
     background-attachment: fixed;
     background-size: 100%;
 }
-@media screen and (min-width: 1950px) {
+@media screen and (min-width: 1510px) {
     .banner{
-        background-image: url('src/assets/iconos/BannerWeb.jpg');
+        background-image: url('src/assets/iconos/BannerWeb6.jpg');
         
     }
 
