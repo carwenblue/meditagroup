@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../../environments/environment';
 
-import { tap, Observable, map } from 'rxjs';
-import { Usuario } from '../../interfaces/usuario.interfaces';
+import { tap, Observable, map, catchError } from 'rxjs';
+import { User, Usuario } from '../../interfaces/usuario.interfaces';
 
 @Injectable({
   providedIn: 'root'
@@ -13,9 +13,9 @@ export class AuthService {
   private urlDesarrollo: string = environment.urlDesarrollo;
   
   // Almaceno los nombres de usuario para usos de simulación
-  private _auth: Usuario | undefined;
+  private _auth: User | undefined;
   // Muestro el nombre de usuario desestructurado con los ...this
-  get auth (): Usuario{
+  get auth (): User{
     return { ...this._auth!};
   }
 
@@ -33,6 +33,27 @@ export class AuthService {
             return true;
           })
         );
+
+  }
+  registro(nombre: string, email: string, password: string){
+    const url= `${ this.urlDesarrollo}/usuario`;
+    const body = {nombre, email, password};
+
+    return this.http.post<User>(url, body)
+    .pipe(
+      tap( resp => {
+        localStorage.setItem('token', resp.id);
+        this._auth = {
+          id: resp.id,
+          nombre: resp.nombre,
+          email: resp.email,
+          password: resp.password
+        }
+      }),
+      map( resp => resp.id)
+    );
+
+    
 
   }
 

@@ -35,6 +35,11 @@
     {
       "titulo": "Mindfulness",
       "id": "mindfulness"
+    },
+    {
+      "email": "Adrián",
+      "password": "adrian@gmail.com",
+      "id": 5
     }
   ],
   "actividad": [
