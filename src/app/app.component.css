@@ -1,0 +1,7 @@
+.banner{
+    background-image: url('src/assets/iconos/bannerWeb.jpg');
+    background-repeat:repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+
+}

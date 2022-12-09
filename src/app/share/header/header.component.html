@@ -1,9 +1,10 @@
 
-<div class="m-4">
-    <nav id="nav" class="navbar bg-light">
+<div class="padre">
+    <nav id="nav" class="navbar">
         <div class="container-fluid">
           <a href="#" class="navbar-brand" >
-            <span class="logo">Meditagroup</span>
+            <img class="logo"  src="assets/iconos/logo.jpg" alt="Logo" data-dismiss="modal" > 
+            <!--<span class="logo">Meditagroup</span>-->
           </a>
 
           <!--Perfil-->
@@ -11,9 +12,9 @@
           <li class="nav-item">
             <a [routerLink]="['/perfil', auth.id]"
             class="nav-item perfil justify-content-end nav-link" 
-            data-dismiss="modal" target="_blank"><span *ngIf="auth.nombre">Welcome {{auth.nombre}}</span>
+            data-dismiss="modal" ><span *ngIf="auth.nombre">Welcome {{auth.nombre}}</span>
               <img [routerLink]="['/perfil', auth.id]"  
-              src="assets/avatar-perfil/avatar.png" alt="Perfil" class="avatar" data-dismiss="modal" target="_blank">                    
+              src="assets/avatar-perfil/avatar.png" alt="Perfil" class="avatar" data-dismiss="modal" >                    
             </a>
             
             </li>
@@ -21,9 +22,11 @@
           
 
         <!--Menú-->
+        <div class="white">
           <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
+        </div>
             <div class="offcanvas offcanvas-end"  tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" >
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>   
               <div class="offcanvas-body">

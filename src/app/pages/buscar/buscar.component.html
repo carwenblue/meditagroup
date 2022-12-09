@@ -1,11 +1,10 @@
-
+<div class="largo">
+<div class="fondo">
 <div class="container-fluid">
     <br>
     <h2>Buscar actividades de meditación</h2> 
     <mat-divider></mat-divider>
     <br>
-
-
         <mat-form-field class="example-full-width" appearance="fill">
            
             <input type="text"
@@ -34,7 +33,10 @@
     </div>
 -->
    
-
-<div *ngIf="actividadSeleccionada">
+<div class="center">
+<div class="actividad" *ngIf="actividadSeleccionada">
     <app-mostrar-actividad [actividad]="actividadSeleccionada"></app-mostrar-actividad>
+</div>
+</div>
+</div>
 </div>

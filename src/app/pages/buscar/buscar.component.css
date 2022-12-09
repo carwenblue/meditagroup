@@ -1,8 +1,39 @@
+.largo{
+    display: flex;
+    justify-content: center;
+    height: 1000px;
 
-
-
+}
+.fondo{
+    width: 55%;
+}
+.actividad{
+    width: 45%;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
 .example-full-width{
     display: flex;
     flex-direction: column;
     width: 90%;
 }
+@media screen and (max-width: 1040px) {
+    .actividad{
+        width: 85%;
+    }
+  }
+  @media screen and (min-width: 1040px ) {
+
+    .actividad{
+        width: 65%;
+    }
+  }
+
+  @media screen and (min-width: 1480px) {
+    .actividad{
+        width: 45%;
+    }
+    
+  }

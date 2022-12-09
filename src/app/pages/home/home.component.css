@@ -1,20 +1,26 @@
-.container-fluid{
-    margin-top: 20px;
+.padre{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 1000px;
+
 }
-.img-home-responsive {
-    width: 100%;
-    height: auto;
-}
-.hijo-container-center {
-    margin-top: 60px;
+.texto{
+    margin-top: 150px;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-   
-    
+    flex-direction: column;    
 }
-
+.botones{
+    margin-top: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
 
 .button-rounded {
     border-radius:30px;
@@ -32,13 +38,24 @@
 }
 
 /*MEDIA QUERIES*/
-@media screen and (max-width: 640px) {
-    .button {
-        max-width: 100%;
-    }
-  }
-  @media screen and (min-width: 1280px) {
+@media screen and (max-width: 1040px) {
     .button {
         max-width: 40%;
     }
+    .texto{
+        max-width: 30%;
+    }
+  }
+  @media screen and (min-width: 1040px ) {
+
+    .texto{
+        max-width: 50%;
+    }
+  }
+
+  @media screen and (min-width: 1480px) {
+    .button {
+        max-width: 90%;
+    }
+    
   }

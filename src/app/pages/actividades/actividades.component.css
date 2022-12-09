@@ -1,3 +1,13 @@
+.largo{
+    display: flex;
+    justify-content: center;
+    height: 1800px;
+
+}
+.fondo{
+    width: 55%;
+}
+
 .contenedor {
     margin-top: 30px;
     justify-content: center;
@@ -5,7 +15,6 @@
     flex-flow: row wrap;
     
 }
-
 
 @media screen and (max-width: 640px) {
     .contenedor {

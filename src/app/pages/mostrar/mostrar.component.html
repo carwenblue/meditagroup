@@ -16,35 +16,38 @@
             {{ actividad | json }}
     
     -->
-    
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-5 col-md-6 col-xs text-align">
-                <br>
-                <h2>{{actividad.titulo}}</h2>
+    <div class="largo">
+        <div class="bloque">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 col-xs text-align">
+                        <br>
+                        <h2>{{actividad.titulo}}</h2>
 
-                <img  class="imagen" [src]="actividad | imagen" alt="imagen de la actividad">
-               
-            </div>
-            <div class="col-lg-7 col-md-6 col-xs">
-                <br>
-                <h4><strong>Descripción de la actividad</strong></h4>
-                <h3>{{actividad.descripcion}}</h3>
+                        <img  class="imagen" [src]="actividad | imagen" alt="imagen de la actividad">
+                    
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-xs">
+                        <br>
+                        <h4><strong>Descripción de la actividad</strong></h4>
+                        <h3>{{actividad.descripcion}}</h3>
 
-                <mat-divider></mat-divider>
-                    <mat-list>
-                        <p><strong>Inicio : </strong></p>
-                        <mat-list-item>{{actividad.inicio}}</mat-list-item>
-                        <p><strong>Duración : </strong></p>
-                        <mat-list-item>{{actividad.duracion}} minutos</mat-list-item>
-                        <p><strong>Instructor : </strong></p>
-                        <mat-list-item>{{actividad.instructor}}</mat-list-item>
-                       
-                </mat-list>
+                        <mat-divider></mat-divider>
+                            <mat-list>
+                                <p><strong>Inicio : </strong></p>
+                                <mat-list-item>{{actividad.inicio}}</mat-list-item>
+                                <p><strong>Duración : </strong></p>
+                                <mat-list-item>{{actividad.duracion}} minutos</mat-list-item>
+                                <p><strong>Instructor : </strong></p>
+                                <mat-list-item>{{actividad.instructor}}</mat-list-item>
+                            
+                        </mat-list>
 
-                <a [routerLink]="[]" class="btn btn-primary">Unirse</a>
-                <a [routerLink]="['/editar', actividad.id]" class="btn btn-primary">Editar</a>
-                <button (click)="volver()" class="btn btn-primary">Volver</button>
+                        <a [routerLink]="[]" class="btn btn-primary">Unirse</a>
+                        <a [routerLink]="['/editar', actividad.id]" class="btn btn-primary">Editar</a>
+                        <button (click)="volver()" class="btn btn-primary">Volver</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

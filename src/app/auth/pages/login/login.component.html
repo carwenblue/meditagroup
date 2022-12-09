@@ -1,60 +1,38 @@
+<div class="largo">
+  <div class="container">
+    <form class="column custom-form" autocomplete="off" [formGroup]="miFormulario" (ngSubmit)="login()">
+      <div class="row justify-content-center">
 
-<div class="container ">
- 
-   
-    <form class="column mt-5 custom-form" 
-    autocomplete="off"
-    [formGroup]="miFormulario" 
-    (ngSubmit)="login()">
-        <div class="row justify-content-center" >
-            
-            <div >
-              
-                <input type="email"  
-                
-                placeholder="Email"
-                class="form-control"
-                formControlName="email"
-                required="required"/>
-
-                <span *ngIf="campoObligatorio ('email')"
-                class="form-text text-danger">
-                    El email es obligatorio
-                </span>
-                
-                <input type="password" 
-                
-                class="form-control"
-                formControlName="password"
-                placeholder="Password"
-                required="required">
-
-                <span *ngIf="campoObligatorio ('password')"
-                class="form-text text-danger">
-                    La contraseña debe ser mayor de 4 caracteres
-                </span>
-
-                <br>
-                <button type="submit"
-                [disabled]="">Inicia sesión</button>
-            </div>
-        </div>
-        <br>
-        <br>
         <div>
-            <span>
-                ¿No tienes cuenta?
-            </span>
 
-            <a routerLink="/auth/registro">
-                Regístrate aquí
-            </a>
+          <input type="email" placeholder="Email" class="form-control" formControlName="email" required="required" />
+
+          <span *ngIf="campoObligatorio ('email')" class="form-text text-danger">
+            El email es obligatorio
+          </span>
+
+          <input type="password" class="form-control" formControlName="password" placeholder="Password"
+            required="required">
+
+          <span *ngIf="campoObligatorio ('password')" class="form-text text-danger">
+            La contraseña debe ser mayor de 4 caracteres
+          </span>
+
+          <br>
+          <button type="submit" [disabled]="">Inicia sesión</button>
         </div>
+      </div>
+      <br>
+      <br>
+      <div>
+        <span>
+          ¿No tienes cuenta?
+        </span>
 
+        <a routerLink="/auth/registro">
+          Regístrate aquí
+        </a>
+      </div>
     </form>
-
-   
-
-   
-</div>      
-
+  </div>
+</div>

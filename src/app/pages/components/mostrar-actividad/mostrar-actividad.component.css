@@ -1,5 +1,6 @@
 
 .tarjeta-block{
+  border-radius: 5px;
   flex-basis: 200px;
   flex-grow: 1;
     margin: 15px;

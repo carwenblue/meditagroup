@@ -1,3 +1,15 @@
+.largo{
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+}
+.bloque{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
 .container-fluid{
     width: 100%;
     background-color:#d6ecfa;
@@ -5,8 +17,7 @@
 }
 
 .imagen {
-    height: 400px;
-    width: 350px;
+    width: 300px;
 }
 
 small {
@@ -17,7 +28,7 @@ small {
     white-space: normal;
     word-wrap: break-word;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1468px) {
     .imagen {
         width: 90%;
         

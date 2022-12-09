@@ -1,3 +1,21 @@
+.largo{
+    height: 1200px;
+    display: flex;
+    justify-content: center;
+}
+.bloque{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    height: 70%;
+}
+.center{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
 h2 {
     margin-top: 40px;
 }
@@ -5,8 +23,6 @@ h2 {
     display: flex;
     flex-direction: row;
     gap: 30px;
-   
-    height: 100%;
 }
 .side-left {
     flex: 2;
@@ -19,18 +35,13 @@ h2 {
     flex-direction: row;
     gap: 30px;
 }
-
 .mat-form{
     display: flex;
-    flex-direction: column;
-   
+    flex-direction: column; 
 }
-.img {
-    width: 100%;
-    height: 300px;
+.imagen {
+    width: 300px;
 }
-
-
 .form-field {
     flex: 100%;
    
@@ -40,10 +51,10 @@ h2 {
 }
 
 
- @media screen and (max-width: 992px) {
-        .row {
-         display: flex;
-         flex-direction: column;
+ @media screen and (max-width: 1292px) {
+        .together {
+            gap: 0px;
+            flex-direction: column;
         }
          
 }

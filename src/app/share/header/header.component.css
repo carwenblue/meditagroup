@@ -1,17 +1,26 @@
-
-
 .container-fluid {
   display: flex;
-  padding: 1em;
-
+}
+.padre{
+  width: auto;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .perfil {
-  margin-right: 20px;
+  margin-right: 22px;
+}
+.navbar{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #F2F9F0;
 }
 .logo {
-  color: #5db0e6;
-  font-size:44px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height: 120px;
+  border-radius: 20px;
+}
+.white {
+  background-color: #ffffff;
+  border-radius: 8px;
 }
 .avatar {
     vertical-align: middle;
@@ -20,13 +29,11 @@
     border-radius: 50%;
   }
   .nav-item {
-    margin-top: 10px;
     font-size: 18px;
   }
   .btn-close {
     font-size: 24px;
     margin: 20px;
-    
   }
   .btn {
     display: inline-block;
@@ -37,8 +44,7 @@
     border: none;
     font-size: 0.875rem;
     color: #3d3b3b;
-    font-weight: bold;
-  
+    font-weight: bold;  
     box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
     cursor: pointer;
   }
